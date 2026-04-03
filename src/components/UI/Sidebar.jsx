@@ -3,7 +3,7 @@ import { LayoutDashboard, Receipt, TrendingUp, X, Hexagon } from "lucide-react";
 const Sidebar = ({ isOpen, setIsSidebarOpen, currentPage, setPage }) => {
     return (
         <aside
-            className={`glass-sidebar fixed lg:static top-0 left-0 z-50 w-[260px] md:w-[280px] flex flex-col h-screen py-6 px-4 transform transition-transform duration-300 ease-in-out
+            className={`glass-sidebar bg-[color:var(--bg-main)] lg:bg-transparent fixed lg:static top-0 left-0 z-50 w-[260px] md:w-[280px] flex flex-col h-screen py-6 px-4 transform transition-transform duration-300 ease-in-out
             ${isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}
         >
             {/* Header / Logo */}

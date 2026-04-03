@@ -44,8 +44,8 @@ const Navbar = ({ toggleTheme, dark, onMenuClick }) => {
                 </button>
 
                 {/* Role Switch Pill */}
-                <div className="flex items-center sm:ml-2 sm:border-l border-[color:var(--card-border)]/50 sm:pl-4">
-                    <div className="hidden md:flex items-center bg-[color:var(--input-bg)] rounded-[14px] p-1 border border-[color:var(--card-border)]/50 mr-3 shadow-inner">
+                <div className="flex items-center ml-2 border-l border-[color:var(--card-border)]/50 pl-2 md:pl-4">
+                    <div className="flex items-center bg-[color:var(--input-bg)] rounded-[14px] p-1 border border-[color:var(--card-border)]/50 mr-2 md:mr-3 shadow-inner">
                         <button
                             onClick={() => setRole("viewer")}
                             className={`px-3 py-1.5 text-xs font-semibold rounded-[10px] transition-all duration-300 ${role === "viewer"
