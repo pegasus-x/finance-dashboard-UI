@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #F8FAFC;
+    --sidebar-bg: rgba(255, 255, 255, 0.7);
+    --card-bg: rgba(255, 255, 255, 0.5);
+    --card-border: rgba(15, 23, 42, 0.05);
+    --text-main: #0F172A;
+    --text-muted: #64748B;
+    --accent: #8B5CF6;     /* Ethereal Violet */
+    --accent-hover: #7C3AED;
+    --success: #10B981;    /* Emerald */
+    --danger: #F43F5E;     /* Rose */
+    --nav-border: rgba(0, 0, 0, 0.05);
+    --input-bg: rgba(241, 245, 249, 0.6);
+  }
+
+  .dark {
+    --bg-main: #0b0c10;    /* Deep void black */
+    --sidebar-bg: rgba(14, 16, 25, 0.65);
+    --card-bg: rgba(19, 23, 35, 0.45);
+    --card-border: rgba(255, 255, 255, 0.05);
+    --text-main: #F8FAFC;
+    --text-muted: #8B9BB4;
+    --accent: #06B6D4;     /* Electric Cyan */
+    --accent-hover: #0891B2;
+    --success: #10B981;
+    --danger: #FB7185;
+    --nav-border: rgba(255, 255, 255, 0.05);
+    --input-bg: rgba(15, 20, 32, 0.5);
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    margin: 0;
+    font-family: 'Inter', -apple-system, sans-serif;
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
+  }
+
+  /* Custom responsive scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--card-border);
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+  }
+}
+
+@layer components {
+  .glass-panel {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+  }
+  
+  .glass-sidebar {
+    background-color: var(--sidebar-bg);
+    border-right: 1px solid var(--card-border);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    box-shadow: 4px 0 24px 0 rgba(0, 0, 0, 0.05);
+  }
+}
+
+@layer utilities {
+  .animate-in {
+    animation-duration: 700ms;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    animation-fill-mode: both;
+  }
+  .fade-in {
+    animation-name: fadeIn;
+  }
+  .slide-in-from-bottom-4 {
+    animation-name: slideInFromBottom;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInFromBottom {
+  from { transform: translateY(1rem); }
+  to { transform: translateY(0); }
+}
+
+/* Custom chart styling */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: var(--card-border);
+  stroke-dasharray: 0;
+}
+
+.dark .recharts-tooltip-wrapper {
+  color: #fff !important;
+}
+
+.recharts-tooltip-cursor {
+  fill: var(--card-border);
+  opacity: 0.3;
+}
