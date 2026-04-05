@@ -1,6 +1,6 @@
 # 💰 FinVault – Finance Dashboard
 
-FinVault is a modern, responsive finance dashboard built using **React.js (JavaScript)** to help users track income, expenses, and financial insights through a clean and intuitive interface.
+FinVault is a finance dashboard built using React.js to help users track income, expenses, and financial insights. It provides an easy-to-use and clean interface.
 
 🔗 **Live Demo:** https://finvault-dashboard.vercel.app/
 
@@ -10,39 +10,58 @@ FinVault is a modern, responsive finance dashboard built using **React.js (JavaS
 
 ### 📊 Dashboard Overview
 
-* Summary cards for **Total Balance, Income, and Expenses**
-* Time-based visualization for financial trends
-* Category-wise breakdown of spending
+The dashboard includes summary cards for **Total Balance, Income, and Expenses**. It also provides:
+
+* A time-based visualization for financial trends
+* A category-wise breakdown of spending
+
+---
 
 ### 💸 Transactions Management
 
-* Add and manage transactions
-* View detailed transaction list (date, amount, category, type)
-* Search, filter, and sort transactions efficiently
+You can manage transactions easily. The transaction list displays:
+
+* Date
+* Amount
+* Category
+* Type (income/expense)
+
+It also supports:
+
+* Search
+* Filtering
+* Sorting
+
+---
 
 ### 🔐 Role-Based UI
 
-* Switch between **Admin** and **Viewer** roles
-* **Admin:** Full access to manage transactions
-* **Viewer:** Read-only access to data
+The dashboard includes two roles:
+
+* **Admin:** Can manage transactions
+* **Viewer:** Can only view data
+
+---
 
 ### 📈 Insights Section
 
-* Displays key financial insights such as:
+This section provides useful financial insights such as:
 
-  * Highest spending category
-  * Monthly comparisons
-  * Useful spending observations
+* Highest spending category
+* Monthly comparisons
+* Spending observations
 
 ---
 
 ## ⭐ Enhancements
 
+The dashboard includes:
+
 * 🌙 Dark mode support
 * 💾 Local storage persistence
-* 📤 Export data (CSV)
+* 📤 Export data to CSV
 * ⚡ Smooth animations and transitions
-* ⏳ Loading indicator for better UX
+* ⏳ Loading indicator for better user experience
 * 📱 Fully responsive design
 
 ---
@@ -61,28 +80,23 @@ FinVault is a modern, responsive finance dashboard built using **React.js (JavaS
 
 ## 📂 Project Structure
 
-```bash
+```
 src/
  ├── assets/
- │
  ├── components/
  │    ├── Dashboard/
  │    ├── Insights/
  │    ├── ThemeProvider/
  │    ├── Transactions/
  │    ├── UI/
- │
  ├── context/
  ├── data/
  ├── hooks/
- │
  ├── pages/
  │    ├── Dashboard.jsx
  │    ├── Insights.jsx
  │    ├── Transactions.jsx
- │
  ├── utils/
- │
  ├── App.jsx
  ├── main.jsx
  ├── index.css
@@ -92,25 +106,25 @@ src/
 
 ## ⚙️ Getting Started
 
-### 1. Clone the repository
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/pegasus-x/finance-dashboard-UI.git
 ```
 
-### 2. Navigate to the project
+2. Navigate to the project:
 
 ```bash
 cd finance-dashboard-UI
 ```
 
-### 3. Install dependencies
+3. Install dependencies:
 
 ```bash
 npm install
 ```
 
-### 4. Run the app
+4. Run the app:
 
 ```bash
 npm run dev
@@ -124,14 +138,14 @@ This project focuses on building a clean and interactive frontend dashboard by:
 
 * Structuring reusable UI components
 * Managing state efficiently using Context API
-* Providing a responsive and intuitive user experience
+* Providing an intuitive user experience
 * Simulating real-world features like role-based access and insights
 
 ---
 
 ## 📌 Highlights
 
-* Clean and modern UI design
+* Modern UI design
 * Scalable component architecture
 * Real-time UI updates with persistent data
 * Focus on usability and clarity
