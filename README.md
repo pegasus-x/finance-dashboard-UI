@@ -57,20 +57,34 @@ FinVault is a modern, responsive finance dashboard built using **React.js (JavaS
 * **Deployment:** Vercel
 
 ---
-
 ## 📂 Project Structure
 
-```id="f8v2ok"
 src/
+ ├── assets/
+ │
  ├── components/
  │    ├── Dashboard/
+ │    ├── Insights/
+ │    ├── ThemeProvider/
  │    ├── Transactions/
  │    ├── UI/
+ │
  ├── context/
- ├── utils/
+ ├── data/
+ ├── hooks/
+ │
  ├── pages/
-```
-
+ │    ├── Dashboard.jsx
+ │    ├── Insights.jsx
+ │    ├── Transactions.jsx
+ │
+ ├── utils/
+ │
+ ├── App.jsx
+ ├── main.jsx
+ ├── index.css
+ 
+---
 ---
 
 ## ⚙️ Getting Started
