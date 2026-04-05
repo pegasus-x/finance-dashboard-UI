@@ -4,6 +4,7 @@ import Transactions from "./pages/Transactions";
 import Insights from "./pages/Insights";
 import ThemeProvider from "./components/ThemeProvider/ThemeProvider";
 import Layout from "./components/UI/Layout";
+import Loader from "./components/UI/Loader";
 
 function App() {
   const [page, setPage] = useState("dashboard");
