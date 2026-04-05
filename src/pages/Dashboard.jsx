@@ -105,8 +105,12 @@ const Dashboard = () => {
                     >
                         {isGenerating ? (
                             <>
-                                <span className="w-4 h-4 border-2 border-black border-t-transparent rounded-full animate-spin" />
-                                Processing...
+                                <div className="relative flex items-center justify-center w-5 h-5 mr-1">
+                                    <span className="absolute inset-0 border-[2px] border-black/10 rounded-full"></span>
+                                    <span className="absolute inset-0 border-[2px] border-transparent border-t-black border-r-black/30 rounded-full animate-spin"></span>
+                                    <span className="absolute inset-1 border-[2px] border-transparent border-b-black/80 border-l-black/30 rounded-full animate-[spin_1.5s_linear_infinite_reverse]"></span>
+                                </div>
+                                Generating...
                             </>
                         ) : (
                             <>
