@@ -40,7 +40,7 @@ FinVault is a modern, responsive finance dashboard built using **React.js (JavaS
 
 * 🌙 Dark mode support
 * 💾 Local storage persistence
-* 📤 Export data (CSV / JSON)
+* 📤 Export data (CSV)
 * ⚡ Smooth animations and transitions
 * ⏳ Loading indicator for better UX
 * 📱 Fully responsive design
