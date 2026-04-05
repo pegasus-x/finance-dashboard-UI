@@ -1,6 +1,6 @@
 # 💰 FinVault – Finance Dashboard
 
-FinVault is a modern, responsive finance dashboard built using **React.js (JavaScript)** to help users track income, expenses, and financial insights with a clean and intuitive interface.
+FinVault is a modern, responsive finance dashboard built using **React.js (JavaScript)** to help users track income, expenses, and financial insights through a clean and intuitive interface.
 
 🔗 **Live Demo:** https://finvault-dashboard.vercel.app/
 
@@ -23,8 +23,8 @@ FinVault is a modern, responsive finance dashboard built using **React.js (JavaS
 ### 🔐 Role-Based UI
 
 * Switch between **Admin** and **Viewer** roles
-* Admin: Full access to manage transactions
-* Viewer: Read-only access to data
+* **Admin:** Full access to manage transactions
+* **Viewer:** Read-only access to data
 
 ### 📈 Insights Section
 
@@ -54,11 +54,14 @@ FinVault is a modern, responsive finance dashboard built using **React.js (JavaS
 * **Charts:** Recharts
 * **Icons:** Lucide React
 * **State Management:** React Context API
+* **Build Tool:** Vite
 * **Deployment:** Vercel
 
 ---
+
 ## 📂 Project Structure
 
+```bash
 src/
  ├── assets/
  │
@@ -83,33 +86,33 @@ src/
  ├── App.jsx
  ├── main.jsx
  ├── index.css
- 
----
+```
+
 ---
 
 ## ⚙️ Getting Started
 
 ### 1. Clone the repository
 
-```id="b2d7s1"
+```bash
 git clone https://github.com/pegasus-x/finance-dashboard-UI.git
 ```
 
 ### 2. Navigate to the project
 
-```id="6h3wyo"
+```bash
 cd finance-dashboard-UI
 ```
 
 ### 3. Install dependencies
 
-```id="iqjdrs"
+```bash
 npm install
 ```
 
 ### 4. Run the app
 
-```id="8qcrl1"
+```bash
 npm run dev
 ```
 
