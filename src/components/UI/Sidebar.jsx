@@ -67,7 +67,7 @@ const Sidebar = ({ isOpen, setIsSidebarOpen, currentPage, setPage }) => {
                 </nav>
 
                 {/* Bottom Actions */}
-                <div className="mt-auto px-1">
+                <div className="mt-6 mb-12 px-1">
                     <div className="p-3.5 rounded-2xl bg-[color:var(--card-border)]/20 border border-[color:var(--card-border)]/30 flex items-center gap-3">
                         <div className="w-10 h-10 min-w-10 rounded-full bg-[color:var(--accent)]/10 text-[color:var(--accent)] text-xs font-bold flex items-center justify-center border border-[color:var(--accent)]/20 shadow-inner relative overflow-hidden">
                             <div className="absolute inset-0 bg-gradient-to-tr from-[color:var(--accent)]/20 to-transparent animate-pulse" />
@@ -79,6 +79,7 @@ const Sidebar = ({ isOpen, setIsSidebarOpen, currentPage, setPage }) => {
                         </div>
                     </div>
                 </div>
+
             </aside>
         </>
     );
